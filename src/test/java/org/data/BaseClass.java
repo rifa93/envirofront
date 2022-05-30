@@ -1,11 +1,19 @@
 package org.data;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.paulhammant.ngwebdriver.NgWebDriver;
 
@@ -62,6 +70,21 @@ public class BaseClass {
          Select s =new Select(e);
          s.selectByVisibleText( value);
 	}	
+	
+	
+	public static void impWait() {
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+	}
+	
+	public static void scrSht(String name) throws IOException {
+		TakesScreenshot tk =(TakesScreenshot)driver;
+		File f = tk.getScreenshotAs(OutputType.FILE);
+		File f1=new File("C:\\Users\\Muftheen\\eclipse-workspace\\EnviroFrontier\\src\\test\\resources\\Screenshots job operations"+name+".png");
+FileUtils.copyFile(f, f1);	
+}	
+		
+
 	
 
 }
