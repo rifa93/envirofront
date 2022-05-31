@@ -1,5 +1,8 @@
 package org.data;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -83,7 +86,12 @@ public class BaseClass {
 		File f1=new File("C:\\Users\\Muftheen\\eclipse-workspace\\EnviroFrontier\\src\\test\\resources\\Screenshots job operations"+name+".png");
 FileUtils.copyFile(f, f1);	
 }	
-		
+	public static void tabKey() throws AWTException {
+   Robot r= new Robot();
+   r.keyPress(KeyEvent.VK_TAB);
+   r.keyRelease(KeyEvent.VK_TAB);
+   
+	}	
 
 	
 

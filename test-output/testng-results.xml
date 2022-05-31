@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37133" started-at="2022-05-30T11:10:41Z" finished-at="2022-05-30T11:11:18Z">
+  <suite name="Default suite" duration-ms="37336" started-at="2022-05-31T11:40:37Z" finished-at="2022-05-31T11:41:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37133" started-at="2022-05-30T11:10:41Z" finished-at="2022-05-30T11:11:18Z">
-      <class name="org.data.NewJob">
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:org.data.NewJob@68be2bc2]" name="startBrowser" is-config="true" duration-ms="3339" started-at="2022-05-30T16:40:41Z" finished-at="2022-05-30T16:40:45Z">
+    <test name="Default test" duration-ms="37336" started-at="2022-05-31T11:40:37Z" finished-at="2022-05-31T11:41:15Z">
+      <class name="org.data.NewContractors">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:org.data.NewContractors@68be2bc2]" name="startBrowser" is-config="true" duration-ms="3277" started-at="2022-05-31T17:10:37Z" finished-at="2022-05-31T17:10:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="startTime()[pri:0, instance:org.data.NewJob@68be2bc2]" name="startTime" is-config="true" duration-ms="2" started-at="2022-05-30T16:40:45Z" finished-at="2022-05-30T16:40:45Z">
+        <test-method status="PASS" signature="startTime()[pri:0, instance:org.data.NewContractors@68be2bc2]" name="startTime" is-config="true" duration-ms="3" started-at="2022-05-31T17:10:40Z" finished-at="2022-05-31T17:10:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method status="PASS" signature="testCase1()[pri:0, instance:org.data.NewJob@68be2bc2]" name="testCase1" duration-ms="33775" started-at="2022-05-30T16:40:45Z" finished-at="2022-05-30T16:41:18Z">
+        <test-method status="PASS" signature="newCon()[pri:0, instance:org.data.NewContractors@68be2bc2]" name="newCon" duration-ms="34019" started-at="2022-05-31T17:10:40Z" finished-at="2022-05-31T17:11:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="endTime()[pri:0, instance:org.data.NewJob@68be2bc2]" name="endTime" is-config="true" duration-ms="0" started-at="2022-05-30T16:41:18Z" finished-at="2022-05-30T16:41:18Z">
+        </test-method> <!-- newCon -->
+        <test-method status="PASS" signature="endTime()[pri:0, instance:org.data.NewContractors@68be2bc2]" name="endTime" is-config="true" duration-ms="0" started-at="2022-05-31T17:11:15Z" finished-at="2022-05-31T17:11:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTime -->
-      </class> <!-- org.data.NewJob -->
+      </class> <!-- org.data.NewContractors -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

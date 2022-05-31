@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -22,10 +23,10 @@ public class NewJob extends BaseClass{
     launchBrowser("Chrome");
 	}
 	
-	//@AfterClass
-//	private void closeBrowser() {
- //   quitBrowser();
-	//}
+  @AfterClass
+ private void closeBrowser() {
+    quitBrowser();
+	}
  
 	@BeforeMethod
 	private void startTime() {
@@ -42,10 +43,10 @@ public class NewJob extends BaseClass{
 	
 	@Test
 	private void testCase1() throws InterruptedException, IOException {
-		JavascriptExecutor js =(JavascriptExecutor)driver;
-		ngdriver= new NgWebDriver(js);
+		//JavascriptExecutor js =(JavascriptExecutor)driver;
+	//	ngdriver= new NgWebDriver(js);
 launchUrl("http://54.206.66.198:8082/#/login");
-ngdriver.waitForAngularRequestsToFinish();
+//ngdriver.waitForAngularRequestsToFinish();
 
 WebElement user = driver.findElement(By.id("username"));
 enterValue(user, "Shri");
